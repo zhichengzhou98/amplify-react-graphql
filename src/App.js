@@ -53,11 +53,11 @@ function App() {
         placeholder="Note description"
         value={formData.description}
       />
-      <input
+      {/* <input
         onChange={e => setFormData({ ...formData, 'image': e.target.value})}
-        placeholder="Note description"
+        placeholder="Note image"
         value={formData.image}
-      />
+      /> */}
       <button onClick={createNote}>Create Note</button>
       <div style={{marginBottom: 30}}>
         {
