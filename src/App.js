@@ -53,6 +53,11 @@ function App() {
         placeholder="Note description"
         value={formData.description}
       />
+      <input
+        onChange={e => setFormData({ ...formData, 'image': e.target.value})}
+        placeholder="Note description"
+        value={formData.image}
+      />
       <button onClick={createNote}>Create Note</button>
       <div style={{marginBottom: 30}}>
         {
@@ -60,6 +65,7 @@ function App() {
             <div key={note.id || note.name}>
               <h2>{note.name}</h2>
               <p>{note.description}</p>
+              <p>{note.image}</p>
               <button onClick={() => deleteNote(note)}>Delete note</button>
             </div>
           ))
