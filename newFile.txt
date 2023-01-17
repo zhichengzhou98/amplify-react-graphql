@@ -6,3 +6,5 @@ test git pull
 
 
 zzc
+
+test git username and email
