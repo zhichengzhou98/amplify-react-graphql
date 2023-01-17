@@ -44,3 +44,4 @@ amplifytools.xcconfig
 **.sample
 #amplify-do-not-edit-end
 #test git pull
+#test git merge
